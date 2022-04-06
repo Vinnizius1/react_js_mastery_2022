@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    /* NUNCA MODIFIQUE "STATE" MANUALMENTE! 
+      counter = 100;
+      ERRADO!
+      O "react state" somente pode ser mudado usando a sua própria função "setState",
+      no nosso caso "setCounter"!
+    */
+  }, [])
 
   return (
     <div className="App">
