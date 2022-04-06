@@ -14,7 +14,6 @@ const App = () => {
   return (
     <div className="App">
       <Person name={"Pâmela"} lastName={"Regina"} age={33} />
-      <br />
       <Person name="Vinicius" lastName="Matos" age={37} />
     </div>
   );
